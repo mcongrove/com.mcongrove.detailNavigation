@@ -5,19 +5,25 @@ A detail-view navigation (previous/next) widget for Titanium Alloy.
 Example Usage
 -------------
 
-	Coming Soon
+	var navigation = Alloy.createWidget("com.mcongrove.detailNavigation", null, {
+		up: function(_event) {
+			openPreviousArticle();
+		},
+		down: function(_event) {
+			openNextArticle();
+		},
+		color: "black"
+	});
+	
+	$.Wrapper.add(navigation.getView());
 
 Options
 -------
-Parameter   | Type        | Default 
-------------|-------------|------------
-Coming Soon | Coming Soon | Coming Soon
-
-Methods
--------
-Function    | Parameters  | Description 
-------------|-------------|------------
-Coming Soon | Coming Soon | Coming Soon
+Parameter | Type       | Default | Options          |
+----------|------------|---------|------------------|
+up        | `Function` |         |                  |
+down      | `Function` |         |                  |
+color     | `String`   | "white" | "white", "black" |
 
 Changelog
 ---------
